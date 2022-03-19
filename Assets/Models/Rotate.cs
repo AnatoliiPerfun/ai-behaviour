@@ -7,6 +7,6 @@ public class Rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Rotate(0, 2, 0);
+        this.transform.Rotate(0, 1, 0);
     }
 }
