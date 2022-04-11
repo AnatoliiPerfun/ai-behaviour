@@ -1607,13 +1607,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524558653}
-  m_LocalRotation: {x: -0.41724414, y: 0.25623554, z: -0.123875044, w: -0.8630792}
-  m_LocalPosition: {x: 33, y: 25.9, z: -12.8}
+  m_LocalRotation: {x: 0.36682746, y: -0.3207671, z: 0.1364219, w: 0.86251676}
+  m_LocalPosition: {x: 31.1, y: 25.6, z: -19.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 46.08, y: -40.8, z: 0}
 --- !u!1 &554263518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,6 +1892,14 @@ PrefabInstance:
       propertyPath: diamond
       value: 
       objectReference: {fileID: 1550492363}
+    - target: {fileID: 4579447999338108377, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+      propertyPath: backdoor
+      value: 
+      objectReference: {fileID: 919599686}
+    - target: {fileID: 4579447999338108377, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+      propertyPath: frontdoor
+      value: 
+      objectReference: {fileID: 1791870521}
     - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2530,6 +2538,7 @@ GameObject:
   - component: {fileID: 919599688}
   - component: {fileID: 919599687}
   - component: {fileID: 919599691}
+  - component: {fileID: 919599692}
   m_Layer: 0
   m_Name: BackDoor
   m_TagString: Untagged
@@ -2629,6 +2638,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &919599692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919599686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c70b973af7bc646a62036afa4760fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!1 &925317490
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,6 +5167,7 @@ GameObject:
   - component: {fileID: 1791870523}
   - component: {fileID: 1791870522}
   - component: {fileID: 1791870526}
+  - component: {fileID: 1791870527}
   m_Layer: 0
   m_Name: FrontDoor
   m_TagString: Untagged
@@ -5222,7 +5245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791870521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.1, y: 2.87, z: 25.48}
+  m_LocalPosition: {x: 17.11, y: 2.87, z: 13.98}
   m_LocalScale: {x: 0.60116, y: 4.0211973, z: 4.160251}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5244,6 +5267,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1791870527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791870521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c70b973af7bc646a62036afa4760fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 1
 --- !u!4 &1796479289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
